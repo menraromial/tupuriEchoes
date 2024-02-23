@@ -1,126 +1,100 @@
 {% load static %}
 
-        <!-- preloader start here -->
-        <div class="preloader">
-            <div class="preloader-inner">
-                <div class="preloader-icon">
-                    <span></span>
-                    <span></span>
+<header>
+    <div class="header-area-two header-transparent" >
+      <div class="main-header header-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                <div class="header-left d-flex align-items-center justify-content-between">
+                  <!-- Logo-->
+                  <div class="logo logo-large light-logo">
+                    <a href="index.html"><img src="{% static 'assets/images/logo/dark.png' %}" alt="logo"></a>
+                  </div>
+                  <!-- Logo Mobile-->
+                  <div class="logo logo-mobile light-logo">
+                    <a href="index.html"><img src="{% static 'assets/images/icon/favicon.png' %}" alt="img"></a>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- preloader ending here -->
 
-        <!-- search area -->
-        <div class="search-area">
-            <div class="search-input">
-                <div class="search-close">
-                    <span></span>
-                    <span></span>
+                <div class="search-container">
+                  <input type="text" id="searchField" class="search-field" placeholder="Search...">
+                  <button id="closeSearch" class="close-search-btn"><i class="ri-close-line"></i></button>
                 </div>
-                <form>
-                    <input type="text" name="text" placeholder="*Search Here.......">
-                    <button class="search-btn"><span class="serch-icon"><i class="icofont-search-2"></i></span></button>
-                </form>
-            </div>
-        </div>
-        <!-- search area -->
 
-       <!-- Mobile Menu Start Here -->
-		<div class="mobile-menu">
-			<nav class="mobile-header">
-				<div class="header-logo">
-					<a href="{% url 'app:home' %}"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
-				</div>
-				<div class="header-bar">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</nav>
-			<nav class="mobile-menu">
-				<div class="mobile-menu-area">
-					<div class="mobile-menu-area-inner">
-						<ul>
-                            <li ><a href="{% url 'app:home' %}">Accueil</a></li>
-                            <li><a href="{% url 'app:about' %}">A propos</a>
-                            </li>
-                            <li><a href="{% url 'app:menu' %}">Menu</a>
-                            </li>
-                            <li><a href="{% url 'app:job' %}">Postuler</a></li>
-                            <li><a href="{% url 'blog:post_list' %}">Blog</a>
-                            </li>
-                            <li><a href="#">Nos services</a>
-                            </li>
-                            <li><a href="{% url 'app:contact' %}">Contact</a></li>
+                <!-- Main-menu for desktop -->
+                <div class="main-menu d-none d-lg-block">
+                  <nav>
+                    <ul class="listing" id="navigation">
+                      <li class="single-list">
+                        <a href="javascript:void(0)" class="single">Home <i class="ri-add-line"></i></a>
+                        <ul class="submenu">
+                          <li class="single-list"><a href="index.html" class="single">Home 01</a></li>
+                          <li class="single-list"><a href="index-two.html" class="single">Home 02</a></li>
+                          <li class="single-list"><a href="index-three.html" class="single">Home 03</a></li>
                         </ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<!-- Mobile Menu Ending Here -->
-
-
-		<!-- desktop menu start here -->
-		<header class="header-section">
-			<div class="header-area">
-                <div class="header-top">
-                    <div class="container">
-                        <div class="top">
-                            <ul class="left">
-                                <li>
-                                    <i class="far fa-clock"></i>
-                                    Lun-Ven: 9h00-20h00 Sam 7h00-21h00 Dim 13h00-20h00 
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Yaoundé-Efoulan
-                                </li>
-                                <li>
-                                    <i class="fas fa-headset"></i>
-                                    Support@noblefood.com
-                                </li>
+                      </li>
+                      <li class="single-list"><a href="about.html" class="single">About</a></li>
+                      <li class="single-list"><a href="donation.html" class="single">Donation</a></li>
+                      <li class="single-list"><a href="blog.html" class="single">Blog</a></li>
+                      <li class="single-list">
+                        <a href="javascript:void(0)" class="single">Pages <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="submenu">
+                          <li class="single-list"><a href="volunteer.html" class="single">Volunteer</a></li>
+                          <li class="single-list"><a href="donate-payment.html" class="single">donate pay</a></li>
+                          <li class="single-list"><a href="blog-details.html" class="single">Blog Details</a></li>
+                          <li class="single-list"><a href="event-details.html" class="single">event Details</a></li>
+                          <li class="single-list"><a href="donation-details.html" class="single">donation Details</a></li>
+                          <li class="single-list"><a href="volunteer-details.html" class="single">Volunteer Details</a></li>
+                          <li class="single-list">
+                            <a href="javascript:void(0)" class="single">Login<i class="ri-arrow-right-s-line"></i></a>
+                            <ul class="submenu">
+                              <li class="single-list"><a href="login.html" class="single">Login</a></li>
+                              <li class="single-list"><a href="register.html" class="single">Registration</a></li>
+                              <li class="single-list"><a href="forgot-pass.html" class="single">Forgot Password</a></li>
+                              <li class="single-list"><a href="verification.html" class="single">Verification</a></li>
+                              <li class="single-list"><a href="new-password.html" class="single">New Password</a></li>
                             </ul>
-                            <ul class="right">
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                          </li>
+
+                          <li class="single-list"><a href="faq.html" class="single">FAQs</a></li>
+                          <li class="single-list"><a href="privacy-policy.html" class="single">privacy policy</a></li>
+                          <li class="single-list"><a href="terms-condition.html" class="single">terms-condition</a></li>
+                        </ul>
+                      </li>
+                      <li class="single-list"><a href="documentation.html" class="single">Contact</a></li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="header-bottom">
-                    <div class="container">
-                        <div class="primary-menu">
-                            <div class="logo">
-                                <a href="{% url 'app:home' %}"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
-                            </div>
-                            <div class="main-area">
-                                <div class="main-menu">
-                                    <ul>
-                                        <li class="active nav-link"><a href="{% url 'app:home' %}">Acceuil</a></li>
-                                        <li><a class="nav-link" href="{% url 'app:about' %}">A propos</a>
-                                        </li>
-                                        <li><a class="nav-link" href="{% url 'app:menu' %}">Menu</a>
-                                        </li>   
-                                        <li><a href="{% url 'app:job' %}">Postuler</a></li>
-                                        <li><a href="{% url 'blog:post_list' %}">Blog</a>
-                                        </li>
-                                        <li><a href="#">Nos services</a>
-                                        </li>
-                                        <li><a href="{% url 'app:contact' %}">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div class="cart-search">
-                                    <ul>
-                                        <li class="search"><i class="icofont-search-2"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header-right d-flex align-items-center">
+                  <!-- Right button -->
+                  <ul class="cart">
+                    <!-- search button -->
+                    <li class="cart-list search-bar">
+                      <a href="javascript:void(0)" class="transparent-icon"><i class="ri-search-line"></i></a>
+                    </li>
+                    <li class="cart-list"><div class="divider d-none d-lg-block"></div></li>
+                    <li class="cart-list d-none d-lg-block ln-change">
+                      <select class="select2" name="lang" id="lang">
+                        <option value="eng">Eng</option>
+                        <option value="bn">Bn</option>
+                        <option value="arb">Arb</option>
+                      </select>
+                    </li>
+                    <li class="cart-list d-sm-inline-block d-none"><a href="donate-payment.html" class="header-btn">Donate Now</a></li>
+                    <!-- Mobile Menu -->
+                  </ul>
                 </div>
-			</div>
-		</header>
-		<!-- desktop menu ending here -->
+              </div>
+              <!-- Mobile Menu -->
+              <div class="div">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
         

@@ -1,34 +1,49 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
-		<!-- favicon -->
-		<link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/png">
-		<!-- animate scss -->
-		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-		<!--Nice select-->
-		<link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
-		<!-- bootstarp css -->
-		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-		<!-- icofont -->
-		<link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
-		<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
-		<!-- lightcase css -->
-		<link rel="stylesheet" href="{% static 'assets/css/lightcase.css' %}">
-		<!-- swiper css -->
-		<link rel="stylesheet" href="{% static 'assets/css/swiper.min.css' %}">
-		<!-- cusyom scss -->
-        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-        
-		<title>{% block title %}{% endblock title %} | Noble Food</title>
-	</head>
+<html lang="fr" dir="lrt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="These template is suitable for charity , NGO , non-profit organization , donation , church or a fundraising website.">
+    <meta name="keywords" content="charity, causes, donate, charity foundation, charity hub, charity theme, donations, non profit, fundraiser,social, ngo, non-profit, nonprofit, organization, volunteer">
+    <meta name="author" content="initTheme">
+	  <meta property="og:type" content="website" >
+    <meta property="og:title" content="Charity & Donation HTML Template" >
+    <meta property="og:site_name" content="donate Website" >
+    <meta property="og:site_name" content="Charitfix" >
+    <meta property="og:url" content="www.Charitfix.com" >
+    <meta property="og:image" content="www.Charitfix.com" >
+    <meta property="og:description" content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization" >
+    <meta name="twitter:title" content="Charity & Donation HTML Template" >
+    <meta name="twitter:description" content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization" >
+    <meta name="twitter:image" content="www.Charitfix.com" >
+    <meta name="twitter:card" content="summary" >
+    <title>ToupouriEchos - {% block title %}{% endblock title %}</title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="{% static 'assets/images/icon/favicon.png' %}">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap-5.3.0.min.css' %}">
+    <!-- fonts & icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/remixicon.css' %}">
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugin.css' %}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main-style.css' %}">
+    <!-- RTL CSS::When Need RTL Uncomments File -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
+  </head>
 
 	<body>
+        <div class="loading-page" id="preloader-active">
+            <div class="counter">
+                <p class="text text-capitalize">loading</p>
+                <span class="number">0%</span>
+                <span class="line"></span>
+            </div>
+          </div>
 
         {% include 'partials/header.html' %}
 
@@ -38,19 +53,13 @@
 
 	</body>
 
-    <script src="{% static 'assets/js/jquery.js' %}"></script>
-	<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
-    <script src="{% static 'assets/js/fontawesome.min.js' %}"></script>
-    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
-    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'assets/js/wow.min.js' %}"></script>
-    <script src="{% static 'assets/js/swiper.min.js' %}"></script>
-    <script src="{% static 'assets/js/progress.js' %}"></script>
-    <script src="{% static 'assets/js/tab.js' %}"></script>
-    <script src="{% static 'assets/js/lightcase.js' %}"></script>
-    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
-    <script src="{% static 'assets/js/functions.js' %}"></script>
-	<script src="{% static 'assets/js/crud_functions.js' %}"></script>
+    <!-- jquery-->
+    <script src="{% static 'assets/js/jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap-5.3.0.min.js' %}"></script>
+    <!-- Plugin -->
+    <script src="{% static 'assets/js/plugin.js' %}"></script>
+    <!-- Main js-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
 </html>

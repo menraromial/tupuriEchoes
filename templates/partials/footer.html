@@ -1,154 +1,190 @@
 
 {% load static %}
-        <!-- link area start -->
-        <div class="news_link">
-            <div class="container">
-                <div class="order-content">
-                    <div class="content-logo">
-                        <a href="#">
-                            <img src="{% static 'assets/images/logo/02.png' %}" alt="logo">
-                            <p>Un goût, Un plaisir</p>
-                        </a>
+    <!-- Footer S t a r t -->
+    <footer>
+        <div class="footer-wrapper footer-bg-one">
+          <div class="container">
+            <div class="footer-menu">
+              <div class="col-lg-12">
+                <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                  <div class="header-left d-flex align-items-center justify-content-between">
+                    <!-- Logo-->
+                    <div class="logo">
+                      <a href="index.html"><img src="{% static 'assets/images/logo/dark.png' %}" alt="logo"></a>
                     </div>
-                    <div class="content-link">
-                        <ul>
-                            
-                            <li>
-                                <a href="https://api.whatsapp.com/send?phone=656992890" target="_blank"class="food-btn style-2">
-                                    <span>Commander Maintenant</span>
-                                </a>
-                            </li>
+                  </div>
+                  <!-- Footer-menu -->
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul class="listing" id="navigation2">
+                        <li class="single-list"><a href="index.html" class="single">Home</a></li>
+                        <li class="single-list"><a href="donation.html" class="single">Donation</a></li>
+                        <li class="single-list"><a href="about.html" class="single">About</a></li>
+                        <li class="single-list"><a href="blog.html" class="single">Blog</a></li>
+                        <li class="single-list"><a href="contact-us.html" class="single">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- Right button -->
+                  <ul class="cart">
+                    <li class="cart-list"><a href="donate-payment.html" class="donate-btn">Donate</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="footer-line">
+            <div class="footer-imp-link row g-4 justify-content-between">
+              <div class="col-xl-2 col-lg-6">
+                <div class="footer-link">
+                  <h4 class="title">Explore Links</h4>
+                  <ul class="imp-link">
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">About Company</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Latest Projects</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Latest Blog</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Our Testimonials</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Our Mission</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6">
+                <div class="footer-link">
+                  <h4 class="title">Get Support</h4>
+                  <ul class="imp-link">
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">About</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">How it Works</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Knowledge Hub</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Success Stories</a>
+                    </li>
+                    <li class="single-list">
+                      <a class="single" href="javascript:void(0)">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-5">
+                <div class="footer-link">
+                  <h4 class="title">Get Support</h4>
+                  <ul class="imp-link">
+                    <li class="single-list">
+                      <div class="d-flex align-items-center gap-10 mb-20">
+                        <div class="imp-icon">
+                          <i class="ri-mail-fill"></i>
+                        </div>
+                        <a class="single" href="javascript:void(0)">donation@gmail.com</a>
+                      </div>
+                    </li>
+                    <li class="single-list">
+                      <div class="d-flex align-items-center gap-10 mb-20">
+                        <div class="imp-icon">
+                          <i class="ri-phone-fill"></i>
+                        </div>
+                        <a class="single" href="javascript:void(0)">(+88) 111-222-333</a>
+                      </div>
+                    </li>
+                    <li class="single-list">
+                      <div class="d-flex align-items-center gap-10 mb-20">
+                        <div class="imp-icon">
+                          <i class="ri-map-pin-2-fill"></i>
+                        </div>
+                        <a class="single" href="javascript:void(0)">Tropical Cyclone, Volcano</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6">
+                <div class="footer-link">
+                  <h4 class="title">Projects</h4>
+                  <ul class="imp-link">
+                    <li class="single-list">
+                      <div class="d-flex gap-20 mb-20 align-items-center">
+                        <div class="project-img">
+                          <a href="donation-details.html">
+                            <img src="{% static 'assets/images/gallery/project-1.png' %}" alt="image">
+                          </a>
+                        </div>
+                        
+                        <div class="project-info">
+                          <p class="project-date">12.Oct.2023</p>
+                          <h4 class="project-title"><a href="donation-details.html">18 Best Charity Marketing Champions</a></h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="single-list">
+                      <div class="d-flex gap-20">
+                        <div class="project-img">
+                          <a href="donation-details.html">
+                            <img src="{% static 'assets/images/gallery/project-2.png' %}" alt="image">
+                          </a>
+                        </div>
+                        <div class="project-info">
+                          <p class="project-date">20.Oct.2023</p>
+                          <h4 class="project-title"><a href="donation-details.html">Charity starts from home. You Can't Even Help,</a></h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="footer-line">
+          </div>
+          <!-- footer-bottom area -->
+          <div class="footer-bottom-area">
+            <div class="container">
+              <div class="footer-border">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="footer-copy-right text-center">
+                      <p class="pera">Copyright © 2023 initTheme. All rights reserved.</p>
+                      <div class="footer-social-link">
+                        <ul class="listing">
+                          <li class="single-list">
+                            <a class="single" href=""><i class="ri-facebook-fill"></i></a>
+                          </li>
+                          <li class="single-list">
+                            <a class="single" href=""><i class="ri-youtube-fill"></i></a>
+                          </li>
+                          <li class="single-list">
+                            <a class="single" href=""><i class="ri-instagram-line"></i></a>
+                          </li>
+                          <li class="single-list">
+                            <a class="single" href=""><i class="ri-linkedin-fill"></i></a>
+                          </li>
                         </ul>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- link area ends -->
-
-        <!-- footer area start -->
-        <footer class="padding-tb" style="background-image: url(/static/assets/css/bg-image/footer-bg.jpg);">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <div class="contant-info">
-                            <h5>Informations de contact</h5>
-                            <ul class="info">
-                                <li>
-                                    <i class="fas fa-home"></i>
-                                    <span>Suite 02 Level Tropical Center</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>+237 6 94 08 62 73 , 6 94 08 62 73</span>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-globe-asia"></i>
-                                        <span>www.noblefood@gmail,com</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-headphones"></i>
-                                        <span>support@mwr.com</span>
-                                    </a>
-                                </li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <div class="opening-time">
-                            <h5>Horaires d'ouvertures</h5>
-                            <ul>
-                                <li>
-                                    <p><i class="far fa-clock"></i>Samedi</p>
-                                    <span>07:00 - 21:00</span>
-                                </li>
-                                <li>
-                                    <p><i class="far fa-clock"></i>Dimanche</p>
-                                    <span>13:00 - 20:00</span>
-                                </li>
-                                <li>
-                                    <p><i class="far fa-clock"></i>Lundi</p>
-                                    <span>09:00 - 20:00</span>
-                                </li>
-                                <li>
-                                    <p><i class="far fa-clock"></i>Mardi-Vendredi</p>
-                                    <span>09:00 - 20:00</span>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <div class="news_letter">
-                            <h5>Abonnez-vous à la newsletter</h5>
-                            <p>
-                                Inscrivez-vous pour nos dernières nouvelles et articles. 
-                                Nous ne vous donnerons pas de spams.
-                            </p>
-                            <div class="contact-search">
-                                <form class="searchForm" method="get" action="0">              
-                                    <input class="searchTerm"  placeholder="Votre e-mail" autocomplete="off">
-                                    <input type="submit" class="searchBtn" value="S'abonner!"/> 
-                                </form> 
-                            </div>
-                            <ul class="follow_us">
-                                <li>
-                                    <p>Suivez-nous : </p>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-whatsapp"></i></a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer area ends -->
-
-        <!-- footer menu start -->
-        <div class="fotter-header">
-            <header>
-                <div class="footer-bg">
-                    <div class="container">
-                        <div class="header-item">
-                            <div class="header-logo">
-                                <p>&copy; 2023<a href="{% url 'app:home' %}">NobleFood</a>Designed by<a href="#">Noble Tech</a></p>
-                            </div>
-                            <div class="header-menu d-none d-lg-block">
-                                <nav class="primary-menu">
-                                    <div class="main-menu-area">
-                                        <ul class="main-menu">
-                                            <li><a href="{% url 'app:home' %}">Accueil</a></li>
-                                            <li><a href="{% url 'app:menu' %}">Menu</a></li>
-                                            <li><a href="{% url 'app:about' %}">A propos</a></li>
-                                            <li><a href="{% url 'blog:post_list' %}">Blog</a></li>
-                                            <li><a href="{% url 'app:job' %}">Postuler</a></li>
-                                            <li><a href="{% url 'app:contact' %}">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- <div class="footer-bottom"></div> -->
+    </footer>
+    <!-- End-of Footer -->
+    <!-- Scroll Up  -->
+    <div class="progressParent" id="back-top">
+        <svg class="backCircle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
         </div>
-        <!-- footer menu ends -->
-
-        
-        <!-- scrollToTop start here -->
-		<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
-		<!-- scrollToTop ending here -->
+        <!-- Add an overlay element -->
+    <div class="overlay"></div>
 
