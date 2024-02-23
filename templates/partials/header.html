@@ -1,0 +1,126 @@
+{% load static %}
+
+        <!-- preloader start here -->
+        <div class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- preloader ending here -->
+
+        <!-- search area -->
+        <div class="search-area">
+            <div class="search-input">
+                <div class="search-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <form>
+                    <input type="text" name="text" placeholder="*Search Here.......">
+                    <button class="search-btn"><span class="serch-icon"><i class="icofont-search-2"></i></span></button>
+                </form>
+            </div>
+        </div>
+        <!-- search area -->
+
+       <!-- Mobile Menu Start Here -->
+		<div class="mobile-menu">
+			<nav class="mobile-header">
+				<div class="header-logo">
+					<a href="{% url 'app:home' %}"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
+				</div>
+				<div class="header-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+			<nav class="mobile-menu">
+				<div class="mobile-menu-area">
+					<div class="mobile-menu-area-inner">
+						<ul>
+                            <li ><a href="{% url 'app:home' %}">Accueil</a></li>
+                            <li><a href="{% url 'app:about' %}">A propos</a>
+                            </li>
+                            <li><a href="{% url 'app:menu' %}">Menu</a>
+                            </li>
+                            <li><a href="{% url 'app:job' %}">Postuler</a></li>
+                            <li><a href="{% url 'blog:post_list' %}">Blog</a>
+                            </li>
+                            <li><a href="#">Nos services</a>
+                            </li>
+                            <li><a href="{% url 'app:contact' %}">Contact</a></li>
+                        </ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Mobile Menu Ending Here -->
+
+
+		<!-- desktop menu start here -->
+		<header class="header-section">
+			<div class="header-area">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="top">
+                            <ul class="left">
+                                <li>
+                                    <i class="far fa-clock"></i>
+                                    Lun-Ven: 9h00-20h00 Sam 7h00-21h00 Dim 13h00-20h00 
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Yaoundé-Efoulan
+                                </li>
+                                <li>
+                                    <i class="fas fa-headset"></i>
+                                    Support@noblefood.com
+                                </li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="primary-menu">
+                            <div class="logo">
+                                <a href="{% url 'app:home' %}"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
+                            </div>
+                            <div class="main-area">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li class="active nav-link"><a href="{% url 'app:home' %}">Acceuil</a></li>
+                                        <li><a class="nav-link" href="{% url 'app:about' %}">A propos</a>
+                                        </li>
+                                        <li><a class="nav-link" href="{% url 'app:menu' %}">Menu</a>
+                                        </li>   
+                                        <li><a href="{% url 'app:job' %}">Postuler</a></li>
+                                        <li><a href="{% url 'blog:post_list' %}">Blog</a>
+                                        </li>
+                                        <li><a href="#">Nos services</a>
+                                        </li>
+                                        <li><a href="{% url 'app:contact' %}">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cart-search">
+                                    <ul>
+                                        <li class="search"><i class="icofont-search-2"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</header>
+		<!-- desktop menu ending here -->
+        

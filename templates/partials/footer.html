@@ -1,0 +1,154 @@
+
+{% load static %}
+        <!-- link area start -->
+        <div class="news_link">
+            <div class="container">
+                <div class="order-content">
+                    <div class="content-logo">
+                        <a href="#">
+                            <img src="{% static 'assets/images/logo/02.png' %}" alt="logo">
+                            <p>Un goût, Un plaisir</p>
+                        </a>
+                    </div>
+                    <div class="content-link">
+                        <ul>
+                            
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=656992890" target="_blank"class="food-btn style-2">
+                                    <span>Commander Maintenant</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- link area ends -->
+
+        <!-- footer area start -->
+        <footer class="padding-tb" style="background-image: url(/static/assets/css/bg-image/footer-bg.jpg);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                        <div class="contant-info">
+                            <h5>Informations de contact</h5>
+                            <ul class="info">
+                                <li>
+                                    <i class="fas fa-home"></i>
+                                    <span>Suite 02 Level Tropical Center</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+237 6 94 08 62 73 , 6 94 08 62 73</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-globe-asia"></i>
+                                        <span>www.noblefood@gmail,com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-headphones"></i>
+                                        <span>support@mwr.com</span>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                        <div class="opening-time">
+                            <h5>Horaires d'ouvertures</h5>
+                            <ul>
+                                <li>
+                                    <p><i class="far fa-clock"></i>Samedi</p>
+                                    <span>07:00 - 21:00</span>
+                                </li>
+                                <li>
+                                    <p><i class="far fa-clock"></i>Dimanche</p>
+                                    <span>13:00 - 20:00</span>
+                                </li>
+                                <li>
+                                    <p><i class="far fa-clock"></i>Lundi</p>
+                                    <span>09:00 - 20:00</span>
+                                </li>
+                                <li>
+                                    <p><i class="far fa-clock"></i>Mardi-Vendredi</p>
+                                    <span>09:00 - 20:00</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                        <div class="news_letter">
+                            <h5>Abonnez-vous à la newsletter</h5>
+                            <p>
+                                Inscrivez-vous pour nos dernières nouvelles et articles. 
+                                Nous ne vous donnerons pas de spams.
+                            </p>
+                            <div class="contact-search">
+                                <form class="searchForm" method="get" action="0">              
+                                    <input class="searchTerm"  placeholder="Votre e-mail" autocomplete="off">
+                                    <input type="submit" class="searchBtn" value="S'abonner!"/> 
+                                </form> 
+                            </div>
+                            <ul class="follow_us">
+                                <li>
+                                    <p>Suivez-nous : </p>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-whatsapp"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area ends -->
+
+        <!-- footer menu start -->
+        <div class="fotter-header">
+            <header>
+                <div class="footer-bg">
+                    <div class="container">
+                        <div class="header-item">
+                            <div class="header-logo">
+                                <p>&copy; 2023<a href="{% url 'app:home' %}">NobleFood</a>Designed by<a href="#">Noble Tech</a></p>
+                            </div>
+                            <div class="header-menu d-none d-lg-block">
+                                <nav class="primary-menu">
+                                    <div class="main-menu-area">
+                                        <ul class="main-menu">
+                                            <li><a href="{% url 'app:home' %}">Accueil</a></li>
+                                            <li><a href="{% url 'app:menu' %}">Menu</a></li>
+                                            <li><a href="{% url 'app:about' %}">A propos</a></li>
+                                            <li><a href="{% url 'blog:post_list' %}">Blog</a></li>
+                                            <li><a href="{% url 'app:job' %}">Postuler</a></li>
+                                            <li><a href="{% url 'app:contact' %}">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- <div class="footer-bottom"></div> -->
+        </div>
+        <!-- footer menu ends -->
+
+        
+        <!-- scrollToTop start here -->
+		<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+		<!-- scrollToTop ending here -->
+

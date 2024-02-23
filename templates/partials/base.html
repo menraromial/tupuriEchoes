@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- favicon -->
+		<link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/png">
+		<!-- animate scss -->
+		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+		<!--Nice select-->
+		<link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+		<!-- bootstarp css -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		<!-- icofont -->
+		<link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+		<!-- lightcase css -->
+		<link rel="stylesheet" href="{% static 'assets/css/lightcase.css' %}">
+		<!-- swiper css -->
+		<link rel="stylesheet" href="{% static 'assets/css/swiper.min.css' %}">
+		<!-- cusyom scss -->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        
+		<title>{% block title %}{% endblock title %} | Noble Food</title>
+	</head>
+
+	<body>
+
+        {% include 'partials/header.html' %}
+
+        {% block content %} {% endblock content %}
+
+        {% include 'partials/footer.html' %}
+
+	</body>
+
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/fontawesome.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiper.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress.js' %}"></script>
+    <script src="{% static 'assets/js/tab.js' %}"></script>
+    <script src="{% static 'assets/js/lightcase.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/functions.js' %}"></script>
+	<script src="{% static 'assets/js/crud_functions.js' %}"></script>
+
+</html>
