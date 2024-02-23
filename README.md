@@ -24,9 +24,6 @@ Nous encourageons les contributions de tous ceux qui sont intéressés par la cu
 
 Pour commencer, consultez les [contribute guidelines](CONTRIBUTING.md) pour plus d'informations sur la façon de contribuer.
 
-## Licence
-
-Ce projet est sous licence [MIT](LICENSE).
 
 ---
 ## Documentation technique
